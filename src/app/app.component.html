@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>MQTT Angular</h1>
+  <input [(ngModel)]="message" placeholder="Type a message" />
+  <button (click)="sendMessage()">Send</button>
+
+  <div>
+    <h3>Received Messages</h3>
+    <ul>
+      <li *ngFor="let msg of receivedMessages">{{ msg }}</li>
+    </ul>
+  </div>
+</div>
